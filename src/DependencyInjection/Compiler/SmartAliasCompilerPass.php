@@ -7,7 +7,7 @@ use LENON\SmartAliasBundle\Generator\SmartAliasServiceFileGenerator;
 
 class SmartAliasCompilerPass implements CompilerPassInterface
 {
-    public function process(ContainerBuilder $container)
+    public function process(ContainerBuilder $container):void
     {
         $env = $container->getParameter('kernel.environment');
         $generator = new SmartAliasServiceFileGenerator($container->getParameter('kernel.project_dir'));

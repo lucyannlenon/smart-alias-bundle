@@ -9,7 +9,7 @@ use Symfony\Component\Config\Resource\FileResource;
 
 class SmartAliasExtension extends Extension
 {
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container):void
     {
         $file = $container->getParameter('kernel.project_dir') . '/config/smart_alias/services.php';
 
