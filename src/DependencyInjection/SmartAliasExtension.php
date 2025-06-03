@@ -21,3 +21,4 @@ class SmartAliasExtension extends Extension
         }
     }
 }
+
