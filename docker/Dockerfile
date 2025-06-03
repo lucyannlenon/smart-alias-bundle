@@ -111,7 +111,7 @@ RUN chown www-data:www-data /var/www -R
 #RUN apt install -y iputils-ping
 #RUN apt install -y mtr
 #RUN apt install -y fping
-USER www-data
+USER root
 
 ### Command to run the startup script
-CMD ["apachectl -D FOREGROUND"]
+#CMD ["apachectl -D FOREGROUND"]

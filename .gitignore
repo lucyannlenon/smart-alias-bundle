@@ -1,0 +1,44 @@
+# Symfony Standard .gitignore
+
+### Symfony ###
+/var/
+/vendor/
+/.env.local
+/.env.local.php
+/.env.*.local
+/public/bundles/
+/config/secrets/prod/prod.decrypt.private.php
+
+### Composer ###
+/composer.lock
+/vendor/
+
+### PHPStorm ###
+.idea/
+
+### VSCode ###
+.vscode/
+
+### PHPUnit ###
+/phpunit.xml
+/phpunit.xml.dist
+/.phpunit.result.cache
+
+### Logs & Cache ###
+/var/cache/
+/var/log/
+/var/test/
+/var/tmp/
+
+### Coverage ###
+/coverage/
+.itemkey
+### Misc ###
+*.log
+*.lock
+*.DS_Store
+Thumbs.db
+
+### Docker ###
+/docker-compose.override.yml
+/.docker/
