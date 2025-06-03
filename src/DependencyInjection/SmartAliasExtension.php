@@ -18,6 +18,8 @@ class SmartAliasExtension extends Extension
 
             $loader = new PhpFileLoader($container, new FileLocator(dirname($file)));
             $loader->load(basename($file));
+
+
         }
     }
 }
