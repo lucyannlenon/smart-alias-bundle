@@ -1,0 +1,25 @@
+{
+  "name": "llenon/smart-alias-bundle",
+  "description": "A Symfony bundle that automatically registers service aliases and tags using attributes.",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "LENON\\SmartAliasBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LENON\\SmartAliasBundle\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=8.1",
+    "symfony/dependency-injection": "^6.0 || ^7.0",
+    "symfony/http-kernel": "^6.0 || ^7.0",
+    "symfony/finder": "^6.0 || ^7.0"
+  },
+  "require-dev": {
+
+  }
+}

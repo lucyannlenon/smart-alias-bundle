@@ -1,0 +1,3 @@
+* * * * *   root    echo "Hello from cron" >> /tmp/cron.log 2>&1
+* * * * *   www-data  /usr/bin/php /app/bin/console schedule:run
+

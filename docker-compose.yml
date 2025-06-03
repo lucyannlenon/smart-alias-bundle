@@ -1,0 +1,17 @@
+services:
+  php:
+    build: ./docker
+    tty: true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    working_dir: /app
+    ports:
+      - '8222:80'
+    volumes:
+      - ./:/app
+#      - ./docker/cron/symfony-scheduler:/etc/cron.d/symfony_run
+#      - ./docker/apache/default.conf:/etc/apache2/sites-available/000-default.conf
+
+#    entrypoint: [ "service", "apache2","start"]
+#    entrypoint:
+#      "php -S 0.0.0.0:8232 /app/public/index.php"
